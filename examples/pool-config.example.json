@@ -1,0 +1,6 @@
+{
+  "denom_a": "<x-coin-denom>",
+  "denom_b": "<q-coin-denom>",
+  "fee_bps": 30,
+  "initial_liquidity": "governance-approved-out-of-band"
+}

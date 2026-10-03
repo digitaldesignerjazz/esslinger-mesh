@@ -1,0 +1,46 @@
+# Build output and local state
+target/
+**/target/
+bin/
+dl/
+data/
+run/
+logs/
+*.log
+*.pid
+.cache/
+
+# Secrets and credentials
+.env
+.env.*
+*.env
+*.gpg
+*.aesgcm
+*.pem
+*.key
+*.seed
+*mnemonic*
+*private*key*
+*secret*
+*password*
+*token*
+**/*keyring*/
+**/keyring-*/
+priv_validator_key.json
+node_key.json
+
+# Runtime/config material
+**/genesis.json
+**/config/
+**/backups/
+**/vaults/
+**/hermes/
+*.tar
+*.tar.gz
+*.zip
+
+# Editor/OS
+.git/
+__pycache__/
+*.pyc
+.DS_Store
