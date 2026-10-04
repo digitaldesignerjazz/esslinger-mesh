@@ -25,6 +25,13 @@ assets without independent review and explicit governance approval.
 - `docs/join-card-template.md` — empty onboarding template without identities;
 - `examples/` — non-secret configuration examples only.
 
+## Whitepaper
+
+Esslinger Mesh Whitepaper v1.1 (04.10.2026):
+
+- [PDF](whitepaper/esslinger-mesh-whitepaper-v1.1.pdf)
+- [Markdown](whitepaper/esslinger-mesh-whitepaper-v1.1.md)
+
 ## Lizenz
 
 Lizenz: Public Domain – freigegeben unter Creative Commons CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/), siehe [LICENSE](LICENSE).
