@@ -26,4 +26,6 @@ an opt-in constant-product exchange between the two denoms.
    withdrawals, swaps, slippage limits, and a basis-point fee.
 
 The design remains subject to protocol, licensing, trademark, and security
-review before any public service or token activity.
+review before any public service or token activity. Public source in this
+repository other than `contracts/amm` is dedicated to the public domain under
+CC0 1.0; `contracts/amm` remains Apache-2.0.
