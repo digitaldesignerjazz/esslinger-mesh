@@ -1,6 +1,8 @@
 # Build output and local state
 target/
 **/target/
+artifacts/
+*.wasm
 bin/
 dl/
 data/

@@ -1,0 +1,10 @@
+{
+  "admin": "nexus10d07y265gmmuvt4z0w9aw880jnsr700j6rnthq",
+  "fee_bps": 30,
+  "fee_recipient": "nexus10d07y265gmmuvt4z0w9aw880jnsr700j6rnthq",
+  "allowed_denoms": [
+    "aqcoin",
+    "ibc/249B1BA7E248694683603187D43174EA80EC25BA1E36149D7980133DCA99C22C"
+  ],
+  "nft_contracts": ["<CW721_CONTRACT_ADDRESS>"]
+}

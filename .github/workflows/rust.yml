@@ -13,13 +13,21 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        dir:
+          - contracts/amm
+          - contracts/nft
+          - contracts/nft-market
 
     defaults:
       run:
-        working-directory: contracts/amm
+        working-directory: ${{ matrix.dir }}
 
     steps:
     - uses: actions/checkout@v4
+    - uses: dtolnay/rust-toolchain@stable
     - name: Build
       run: cargo build --verbose
     - name: Run tests

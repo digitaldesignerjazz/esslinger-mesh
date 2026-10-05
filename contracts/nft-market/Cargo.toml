@@ -1,0 +1,30 @@
+[package]
+name = "esslinger-mesh-nft-market"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Fixed-price CW721 escrow for Esslinger Mesh (nexus-qcoin-1). Not audited."
+rust-version = "1.81"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+codegen-units = 1
+panic = "abort"
+overflow-checks = true
+incremental = false
+
+[dependencies]
+cosmwasm-std = { version = "2.2", default-features = false, features = ["std", "iterator", "abort"] }
+cosmwasm-schema = "2.2"
+cw-storage-plus = "2.0"
+schemars = "0.8"
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+
+[dev-dependencies]
+esslinger-mesh-cw721 = { path = "../nft" }
+cw-multi-test = "2.5"
