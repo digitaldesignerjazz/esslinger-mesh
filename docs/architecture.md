@@ -1,6 +1,6 @@
-# Esslinger Mesh architecture (public overview)
+# Esslinger Cyberspace architecture (public overview)
 
-Esslinger Mesh is a private experiment design for two independent Cosmos
+Esslinger Cyberspace (formerly Esslinger Mesh and Esslinger Net) is a private experiment design for two independent Cosmos
 SDK/CometBFT chains: one for X-Coin and one for Q-Coin. IBC is the planned
 transport for controlled cross-chain transfers. A CosmWasm pool can provide
 an opt-in constant-product exchange between the two denoms.

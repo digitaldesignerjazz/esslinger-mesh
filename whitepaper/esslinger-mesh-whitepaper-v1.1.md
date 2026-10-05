@@ -1,15 +1,15 @@
-# Esslinger Mesh
+# Esslinger Cyberspace
 
 ## An Experimental, Verifiable Multi-Chain and Mesh Network
 
 **Whitepaper v1.1 · 04.10.2026**  
 **Author and operator:** Sven Normen Eßlinger, Esslinger Consulting (GitHub: [digitaldesignerjazz](https://github.com/digitaldesignerjazz))  
-**Project codename:** Nexus · **Public network name:** Esslinger Mesh  
+**Project codename:** Nexus · **Public network name:** Esslinger Cyberspace (formerly Esslinger Mesh and Esslinger Net)  
 **Repository:** [github.com/digitaldesignerjazz/esslinger-mesh](https://github.com/digitaldesignerjazz/esslinger-mesh#readme) (README)  
 © Sven Normen Eßlinger
 
 > **Important legal notice — please read first.**
-> Esslinger Mesh is an experimental research and test network. This document is **not** an offer of crypto-assets, not a prospectus or crypto-asset white paper within the meaning of the EU Markets in Crypto-Assets Regulation (MiCA), not a solicitation, and **not investment, legal or tax advice**. X-Coin, Q-Coin and all test denominations described here are **not offered, sold or listed** anywhere, have **no stated monetary value**, and no price, peg, yield or return is promised or implied. The software is experimental and **has not been independently audited**. A MiCA review would be required before any public offering or any publication of a value-related metric. See Section 11.
+> Esslinger Cyberspace is an experimental research and test network. This document is **not** an offer of crypto-assets, not a prospectus or crypto-asset white paper within the meaning of the EU Markets in Crypto-Assets Regulation (MiCA), not a solicitation, and **not investment, legal or tax advice**. X-Coin, Q-Coin and all test denominations described here are **not offered, sold or listed** anywhere, have **no stated monetary value**, and no price, peg, yield or return is promised or implied. The software is experimental and **has not been independently audited**. A MiCA review would be required before any public offering or any publication of a value-related metric. See Section 11.
 
 > **Update 04.10.2026 (v1.1): tunnel test TESTNET1_TUNNELTEST_20261004.** This note supplements Sections 6.1 and 7.1, whose text is unchanged from v1. Governance approved the tunnel test TESTNET1_TUNNELTEST_20261004 at 03:13 CEST. At 03:14 CEST the Cloudflare quick tunnel was rejected with HTTP 429. On the operator's order, the test was cleanly shut down at 03:16 CEST and the approval was withdrawn. No RPC filter, cloudflared or safety sampler is running. Nothing was publicly exposed. Any new attempt requires a new Governance approval.
 
@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Esslinger Mesh is a single-operator, experimental network that combines two application chains (X-Coin and Q-Coin), two harvester chains and a separate public-test chain — all built with the Cosmos SDK and CosmWasm (wasmd) and connected over IBC by a Hermes relayer — with a private mesh-networking layer (Yggdrasil, Headscale/Tailscale) and a Rust edge node ("Onyx") running on the operator's own hardware in Hannover, Germany. An orchestrator and a set of AI agents ("Lumina") run alongside the chains.
+Esslinger Cyberspace is a single-operator, experimental network that combines two application chains (X-Coin and Q-Coin), two harvester chains and a separate public-test chain — all built with the Cosmos SDK and CosmWasm (wasmd) and connected over IBC by a Hermes relayer — with a private mesh-networking layer (Yggdrasil, Headscale/Tailscale) and a Rust edge node ("Onyx") running on the operator's own hardware in Hannover, Germany. An orchestrator and a set of AI agents ("Lumina") run alongside the chains.
 
 The project's distinguishing focus is **verifiability rather than scale**: every claim about the network's health is meant to be backed by signed, append-only evidence that anyone can re-check with a single script, anchored in a public Git repository. As of 4 October 2026, six chain nodes are producing blocks locally, a phase-1 measurement re-verified 16,037 of 16,037 validator signatures (100%), and the first scored measurement epoch ("Epoch 1") is running with 70 pre-committed random probes against the Hannover node; its first probe passed. A hybrid price-*reference* concept exists only as an internal shadow calculation; nothing is published as a price.
 
@@ -32,7 +32,7 @@ Small, self-hosted blockchain and mesh experiments usually suffer from two probl
 1. **Unverifiable health claims.** "The node was online" or "the network is up" is typically self-reported. Without signed, time-bound evidence, such claims cannot be checked by outsiders — and often not even by the operator after the fact.
 2. **Unsafe exposure.** Opening a node to the public internet, or attaching a price to a token, creates technical, financial and regulatory risk long before the system is mature.
 
-Esslinger Mesh is an attempt to address both on a small scale:
+Esslinger Cyberspace is an attempt to address both on a small scale:
 
 - **Evidence first.** Measurements are challenge–response based, signed on both sides, written to append-only hash-chained logs, and anchored in a public repository, so that the operator cannot silently rewrite history after a push.
 - **Gated exposure.** Nothing becomes public — no endpoint, no tunnel, no metric, no price — without an explicit approval step (operator decision and, for network-affecting changes, the project's Governance process).
@@ -297,13 +297,13 @@ On 3 October 2026 Governance approved a time-boxed (max. 30 min) test exposing t
 - The reference-basket and performance-index concepts are internal calculations, not prices. They are not published as prices.
 - A **MiCA assessment** (and any other applicable legal review) would be required **before** any public offering, admission to trading, or publication of a value-related metric.
 - The software is experimental and provided without warranty. Use at your own risk.
-- "Cosmos SDK", "CosmWasm", "Tailscale", "Cloudflare", "Google Cloud", "GitHub" and other names are trademarks of their respective owners; Esslinger Mesh is **built with** the Cosmos SDK and is not affiliated with or endorsed by those owners.
+- "Cosmos SDK", "CosmWasm", "Tailscale", "Cloudflare", "Google Cloud", "GitHub" and other names are trademarks of their respective owners; Esslinger Cyberspace is **built with** the Cosmos SDK and is not affiliated with or endorsed by those owners.
 
 ---
 
 ## 12. Conclusion
 
-Esslinger Mesh is deliberately small and openly experimental: five Cosmos SDK-based chains (six nodes) connected by IBC, a private encrypted mesh, an edge node on the operator's own hardware, and a measurement system whose results anyone can re-verify from public evidence. Its main contribution so far is process rather than scale: pre-committed random probes, signatures on both sides, append-only evidence, public anchoring, gated exposure — and a record that includes rejections and an automatically aborted test. The next milestones are the completion of Epoch 1 on 11 October 2026, verifiable compute and capacity probes, and — only after Governance approval — carefully limited public test access.
+Esslinger Cyberspace is deliberately small and openly experimental: five Cosmos SDK-based chains (six nodes) connected by IBC, a private encrypted mesh, an edge node on the operator's own hardware, and a measurement system whose results anyone can re-verify from public evidence. Its main contribution so far is process rather than scale: pre-committed random probes, signatures on both sides, append-only evidence, public anchoring, gated exposure — and a record that includes rejections and an automatically aborted test. The next milestones are the completion of Epoch 1 on 11 October 2026, verifiable compute and capacity probes, and — only after Governance approval — carefully limited public test access.
 
 ---
 
@@ -314,4 +314,4 @@ Esslinger Mesh is deliberately small and openly experimental: five Cosmos SDK-ba
 
 ---
 
-*Esslinger Mesh Whitepaper v1.1 · 04.10.2026 · © Sven Normen Eßlinger, Esslinger Consulting. All figures are taken from project documents and live read-only checks on 4 October 2026 (~03:05 CEST). Times are Central European Summer Time (CEST, UTC+2).*
+*Esslinger Cyberspace Whitepaper v1.1 · 04.10.2026 · © Sven Normen Eßlinger, Esslinger Consulting. All figures are taken from project documents and live read-only checks on 4 October 2026 (~03:05 CEST). Times are Central European Summer Time (CEST, UTC+2).*

@@ -1,6 +1,8 @@
-# Esslinger Mesh
+# Esslinger Cyberspace
 
-Esslinger Mesh – two Cosmos SDK-based chains (X-Coin, Q-Coin) with IBC.
+The public project name is **Esslinger Cyberspace** (formerly Esslinger Mesh and Esslinger Net): two Cosmos SDK-based chains (X-Coin, Q-Coin) with IBC.
+
+The GitHub repository slug remains [`esslinger-mesh`](https://github.com/digitaldesignerjazz/esslinger-mesh) for now. Chain identifiers, crate names, and contract labels that contain `esslinger-mesh` are unchanged.
 
 This repository is a **local, public-source preparation only** for a private
 experiment network. It contains a small constant-product AMM, a CW721
@@ -33,7 +35,7 @@ explicit governance approval.
 
 ## Whitepaper
 
-Esslinger Mesh Whitepaper v1.1 (04.10.2026):
+Esslinger Cyberspace Whitepaper v1.1 (04.10.2026), formerly the Esslinger Mesh whitepaper. The file names below stay as published:
 
 - [PDF](whitepaper/esslinger-mesh-whitepaper-v1.1.pdf)
 - [Markdown](whitepaper/esslinger-mesh-whitepaper-v1.1.md)

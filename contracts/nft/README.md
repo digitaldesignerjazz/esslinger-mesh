@@ -4,7 +4,7 @@
 >
 > **WARNING: This contract is not audited.** Use at your own risk. There is no guarantee of fund or NFT safety.
 
-CW721-compatible collection for Esslinger Mesh. Own code, Apache-2.0 (see `LICENSE`). Message names follow the CW721 JSON API (`mint`, `transfer_nft`, `send_nft`, `approve`, `owner_of`, `nft_info`, …). It is not a byte-for-byte upstream `cw721-base` build.
+CW721-compatible collection for Esslinger Cyberspace (formerly Esslinger Mesh and Esslinger Net). Own code, Apache-2.0 (see `LICENSE`). Message names follow the CW721 JSON API (`mint`, `transfer_nft`, `send_nft`, `approve`, `owner_of`, `nft_info`, …). It is not a byte-for-byte upstream `cw721-base` build.
 
 Deploy **only on `nexus-qcoin-1`**. Store and instantiate commands are in [`../DEPLOY.md`](../DEPLOY.md).
 
