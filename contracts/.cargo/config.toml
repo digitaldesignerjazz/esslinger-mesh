@@ -1,0 +1,7 @@
+# Rust 1.84+ links wasm32 with rust-lld, which rejects the CosmWasm VM
+# imports (db_read, addr_validate, abort, ...) unless they stay undefined.
+[target.wasm32-unknown-unknown]
+rustflags = [
+  "-C", "link-arg=--allow-undefined",
+  "-C", "link-arg=--import-memory",
+]

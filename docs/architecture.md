@@ -24,6 +24,11 @@ an opt-in constant-product exchange between the two denoms.
    chains; credentials are never stored in source control.
 4. **AMM prototype:** `contracts/amm` implements two-denom liquidity,
    withdrawals, swaps, slippage limits, and a basis-point fee.
+5. **NFT prototype:** `contracts/nft` is a CW721-compatible collection and
+   `contracts/nft-market` is a separate fixed-price escrow. Both are for the
+   Q-Coin chain only, use the same 30 bps fee scale as the pool, and are not
+   audited. They do not change the AMM. Deploy commands live in
+   `contracts/DEPLOY.md`.
 
 The design remains subject to protocol, licensing, trademark, and security
 review before any public service or token activity.
