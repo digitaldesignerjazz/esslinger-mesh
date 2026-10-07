@@ -342,7 +342,7 @@ pub fn instantiate(
     let mut nft_contracts = Vec::with_capacity(msg.nft_contracts.len());
     for raw in &msg.nft_contracts {
         let addr = deps.api.addr_validate(raw)?;
-        if addr == env.contract.address || nft_contracts.iter().any(|c: &Addr| c == &addr) {
+        if addr == env.contract.address || nft_contracts.contains(&addr) {
             return Err(err("invalid collection"));
         }
         nft_contracts.push(addr);
@@ -665,7 +665,7 @@ fn execute_add_collection(
     if addr == env.contract.address {
         return Err(err("invalid collection"));
     }
-    if cfg.nft_contracts.iter().any(|c| c == &addr) {
+    if cfg.nft_contracts.contains(&addr) {
         return Err(err("collection exists"));
     }
     if cfg.nft_contracts.len() >= MAX_COLLECTIONS {
@@ -686,7 +686,7 @@ fn execute_remove_collection(
     let mut cfg = CONFIG.load(deps.storage)?;
     only_admin(&cfg, &info)?;
     let addr = deps.api.addr_validate(&nft_contract)?;
-    if !cfg.nft_contracts.iter().any(|c| c == &addr) {
+    if !cfg.nft_contracts.contains(&addr) {
         return Err(err("collection not allowed"));
     }
     let still = LISTINGS
@@ -697,7 +697,7 @@ fn execute_remove_collection(
     if still.is_some() {
         return Err(err("collection has listings"));
     }
-    cfg.nft_contracts.retain(|c| c != &addr);
+    cfg.nft_contracts.retain(|c| *c != addr);
     CONFIG.save(deps.storage, &cfg)?;
     Ok(Response::new()
         .add_attribute("action", "remove_collection")
