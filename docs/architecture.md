@@ -31,4 +31,7 @@ an opt-in constant-product exchange between the two denoms.
    `contracts/DEPLOY.md`.
 
 The design remains subject to protocol, licensing, trademark, and security
-review before any public service or token activity.
+review before any public service or token activity. Public source in this
+repository other than `contracts/amm`, `contracts/nft` and `contracts/nft-market`
+is dedicated to the public domain under CC0 1.0; those three folders remain
+Apache-2.0.

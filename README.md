@@ -2,6 +2,8 @@
 
 Esslinger Mesh – two Cosmos SDK-based chains (X-Coin, Q-Coin) with IBC.
 
+**Public Domain (CC0 1.0 Universal). Alle dürfen mitcoden.** Forks und Pull Requests sind willkommen. Beiträge werden ebenfalls der Public Domain gewidmet (CC0, Verzicht auf das Urheberrecht), damit das Commons öffentlich bleibt. Siehe [CONTRIBUTING.md](CONTRIBUTING.md) und [LICENSE](LICENSE). Die Ordner `contracts/amm`, `contracts/nft` und `contracts/nft-market` bleiben Apache-2.0 (jeweils eigene `LICENSE`).
+
 This repository is a **local, public-source preparation only** for a private
 experiment network. It contains a small constant-product AMM, a CW721
 collection, a fixed-price NFT escrow, and neutral design documentation. It
@@ -40,6 +42,6 @@ Esslinger Mesh Whitepaper v1.1 (04.10.2026):
 
 ## Lizenz
 
-Lizenz: Public Domain – freigegeben unter Creative Commons CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/), siehe [LICENSE](LICENSE).
+Lizenz: Public Domain – freigegeben unter Creative Commons CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/), siehe [LICENSE](LICENSE). Alle dürfen mitcoden; Beiträge ebenfalls unter CC0, siehe [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Die Ordner `contracts/amm`, `contracts/nft` und `contracts/nft-market` enthalten Code unter Apache-2.0 (siehe die `LICENSE` in jedem Ordner); für sie gilt diese Lizenz. Die NFT-Contracts sind nicht auditiert.
