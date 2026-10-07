@@ -1,4 +1,4 @@
-//! esslinger-mesh-cw721: CW721-compatible collection for Esslinger Mesh.
+//! esslinger-mesh-cw721: CW721-compatible collection for Esslinger Cyberspace.
 //! Own code, Apache-2.0. Message names match the CW721 JSON API
 //! (Mint, TransferNft, SendNft, Approve, OwnerOf, NftInfo, ...).
 //!

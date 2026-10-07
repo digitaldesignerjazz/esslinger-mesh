@@ -3,7 +3,7 @@ name = "esslinger-mesh-amm"
 version = "0.1.0"
 edition = "2021"
 license = "Apache-2.0"
-description = "Minimal constant-product (x*y=k) AMM for two native/IBC denoms - Esslinger Mesh public prototype"
+description = "Minimal constant-product (x*y=k) AMM for two native/IBC denoms - Esslinger Cyberspace public prototype"
 rust-version = "1.81"
 
 [lib]

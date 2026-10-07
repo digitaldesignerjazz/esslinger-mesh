@@ -3,7 +3,7 @@ name = "esslinger-mesh-cw721"
 version = "0.1.0"
 edition = "2021"
 license = "Apache-2.0"
-description = "CW721-compatible NFT collection for Esslinger Mesh (nexus-qcoin-1). Not audited."
+description = "CW721-compatible NFT collection for Esslinger Cyberspace (nexus-qcoin-1). Not audited."
 rust-version = "1.81"
 
 [lib]
